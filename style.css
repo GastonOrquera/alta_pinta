@@ -1,0 +1,240 @@
+@import url('https://fonts.cdnfonts.com/css/mirror-mirror');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-prueba: 'Mirror Mirror', sans-serif;
+    --bg-b: #303030;
+    --txt: #f7f7f7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #404040;
+}
+
+header {
+    background-color: var(--bg-b);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo_img {
+    background-image: url(./logo.jpg);
+    background-size: cover;
+    background-position: 2%;
+    height: 8rem;
+    width: 9rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--txt);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* FINAL HEADER */
+
+/* MAIN */
+
+main .gin {
+    background: #16222A;
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    background: linear-gradient(to right, #3A6073, #16222A);
+}
+
+.gin,
+.fernet,
+.vinos {
+    padding: 2rem 2rem;
+}
+
+.gin span {
+    color: rgba(58, 58, 248, 0.671);
+    font-size: 1.2rem;
+}
+
+main h2 {
+    font-family: var(--font-prueba);
+    color: var(--txt);
+    letter-spacing: 12px;
+    font-size: 2.8rem;
+}
+
+main .cont {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+main .box_producto {
+    background-color: var(--bg-b);
+    display: flex;
+    flex-direction: column;
+    color: var(--txt);
+    width: max-content;
+}
+
+main .box_producto img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+
+}
+
+main .box_producto h3 {
+    font-family: 'Courier New', Courier, monospace;
+    padding: .4rem .4rem;
+    letter-spacing: 1px;
+}
+
+main .box_producto p {
+    font-family: 'Courier New', Courier, monospace;
+    padding: .4rem .4rem;
+}
+
+.btn_producto {
+    background-color: var(--txt);
+    color: var(--bg-b);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding: .6rem .8rem;
+    margin: .4rem .4rem;
+    border: 1px solid transparent;
+    transition: 400ms ease-in-out;
+}
+
+.btn_producto:hover {
+    background-color: transparent;
+    border: 1px solid var(--txt);
+    color: var(--txt);
+}
+
+.fernet {
+    /* background-color: #2388604d; */
+    background: #134E5E;
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);
+    background: linear-gradient(to right, #71B280, #134E5E);
+}
+
+.fernet span {
+    color: #2388609d;
+    font-size: 1.2rem;
+}
+
+.vinos {
+    /* background-color: #60283663; */
+    /* background: #a73737;
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    background: linear-gradient(to right, #7a2828, #a73737); */
+    background: #870000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.vinos span {
+    color: #722438b2;
+}
+
+
+
+/* FINAL MAIN */
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    /* HEADER */
+
+    header {
+        padding: 0 0;
+
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 18px;
+        height: 18px;
+        /* background-color: white; */
+        margin-right: 3rem;
+        gap: 2px;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 16px;
+        height: 2px;
+        background-color: var(--txt);
+    }
+
+    /* MAIN */
+
+    main .cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .gin,
+    .fernet,
+    .vinos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+
+    main .box_producto {
+        width: 100%;
+    }
+
+    main .box_producto img {
+        width: 10.6rem;
+        height: 11rem;
+    }
+
+    main .box_producto h3 {
+        font-size: .9rem;
+    }
+
+    .btn_producto {
+        padding: .4rem .8rem;
+    }
+
+}
