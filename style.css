@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/mirror-mirror');
+@import url('https://fonts.cdnfonts.com/css/rhythm-block');
 
 * {
     box-sizing: border-box;
@@ -8,7 +9,8 @@
 
 :root {
     --font-prueba: 'Mirror Mirror', sans-serif;
-    --bg-b: #303030;
+    --font-prueba2: 'Rhythm Block', sans-serif;
+    --bg-b: #1d1d1d;
     --txt: #f7f7f7;
 }
 
@@ -17,7 +19,12 @@ html {
 }
 
 body {
-    background-color: #404040;
+    background: #f5f5f546;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -29,7 +36,7 @@ header {
 }
 
 header .logo_img {
-    background-image: url(./logo.jpg);
+    background-image: url(./logo-removebg-preview.png);
     background-size: cover;
     background-position: 2%;
     height: 8rem;
@@ -53,18 +60,19 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: var(--txt);
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: var(--font-prueba2);
 }
 
 /* FINAL HEADER */
 
 /* MAIN */
 
-main .gin {
+/* main .gin {
     background: #16222A;
     background: -webkit-linear-gradient(to right, #3A6073, #16222A);
     background: linear-gradient(to right, #3A6073, #16222A);
-}
+} */
 
 .gin,
 .fernet,
@@ -72,16 +80,20 @@ main .gin {
     padding: 2rem 2rem;
 }
 
-.gin span {
-    color: rgba(58, 58, 248, 0.671);
-    font-size: 1.2rem;
+hr {
+    color: #ffffffef;
 }
 
 main h2 {
-    font-family: var(--font-prueba);
+    /* font-family: var(--font-prueba); */
+    font-family: var(--font-prueba2);
     color: var(--txt);
     letter-spacing: 12px;
     font-size: 2.8rem;
+    background-color: #190a056b;
+    padding: .2rem .4rem;
+    width: max-content;
+    border-radius: .4rem;
 }
 
 main .cont {
@@ -96,23 +108,26 @@ main .box_producto {
     flex-direction: column;
     color: var(--txt);
     width: max-content;
+    border-radius: .4rem;
+    overflow: hidden;
 }
 
 main .box_producto img {
     width: 15rem;
     height: 15rem;
     object-fit: cover;
+    border-radius: .4rem;
 
 }
 
 main .box_producto h3 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-prueba2);
     padding: .4rem .4rem;
     letter-spacing: 1px;
 }
 
 main .box_producto p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-prueba2);
     padding: .4rem .4rem;
 }
 
@@ -120,11 +135,12 @@ main .box_producto p {
     background-color: var(--txt);
     color: var(--bg-b);
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-prueba2);
     padding: .6rem .8rem;
     margin: .4rem .4rem;
     border: 1px solid transparent;
     transition: 400ms ease-in-out;
+    border-radius: .4rem;
 }
 
 .btn_producto:hover {
@@ -133,42 +149,23 @@ main .box_producto p {
     color: var(--txt);
 }
 
-.fernet {
-    /* background-color: #2388604d; */
+/* .fernet {
+ 
     background: #134E5E;
     background: -webkit-linear-gradient(to right, #71B280, #134E5E);
     background: linear-gradient(to right, #71B280, #134E5E);
-}
+} */
 
-.fernet span {
-    color: #2388609d;
-    font-size: 1.2rem;
-}
 
-.vinos {
-    /* background-color: #60283663; */
-    /* background: #a73737;
-    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
-    background: linear-gradient(to right, #7a2828, #a73737); */
+/* .vinos {
     background: #870000;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #190A05, #870000);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #190A05, #870000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.vinos span {
-    color: #722438b2;
-}
+} */
 
 
 
 /* FINAL MAIN */
-
-
-
 
 @media only screen and (max-width: 1000px) {
 
