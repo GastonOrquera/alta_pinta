@@ -179,9 +179,15 @@ main .box_producto p {
 
     }
 
+    header .logo_img {
+        height: 9rem;
+        width: 9rem;
+    }
+
     header nav {
         display: none;
     }
+
 
     header nav.active {
         display: block;
