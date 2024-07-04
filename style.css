@@ -186,19 +186,29 @@ main .box_producto p {
         display: block;
         flex-direction: column;
         /* background-color: #190a05ee; */
-        background-color: #1d1d1dfb;
+        background-color: #201b1bfb;
         position: absolute;
         padding: 2rem 1.2rem;
         width: 100%;
         top: 128px;
         z-index: 1;
+        height: 22rem;
         border-bottom-right-radius: 2rem;
         border-bottom-left-radius: 2rem;
     }
 
+    hr {
+        border-color: #f7f7f710;
+
+    }
+
     header nav ul {
         flex-direction: column;
-        gap: .660rem;
+        gap: .7rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
     }
 
     .hamburger {
