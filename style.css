@@ -29,7 +29,7 @@ body {
 
 header {
     /* background-color: var(--bg-b); */
-    background-color: #1d1d1d;
+    background-color: #e73f3900;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,7 +186,7 @@ main .box_producto p {
         display: block;
         flex-direction: column;
         /* background-color: #190a05ee; */
-        background-color: #1d1d1dec;
+        background-color: #1d1d1dfb;
         position: absolute;
         padding: 2rem 1.2rem;
         width: 100%;
