@@ -266,7 +266,7 @@ main .box_producto p {
     main .cont {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: .6rem;
     }
 
     .gin,
@@ -276,7 +276,7 @@ main .box_producto p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem 1rem;
+        padding: .6rem .6rem;
     }
 
     main .box_producto {
@@ -284,13 +284,24 @@ main .box_producto p {
     }
 
     main .box_producto img {
-        width: 10.6rem;
+        width: 11rem;
         height: 11rem;
     }
 
     main .box_producto h3 {
         font-size: .9rem;
     }
+
+    .btn_producto {
+        border: 2px solid transparent;
+        padding: .5rem .4rem;
+    }
+
+    .btn_producto:hover {
+        border: 2px solid var(--txt);
+    }
+
+
 
 
 }
