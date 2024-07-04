@@ -114,6 +114,30 @@ main .box_producto {
     overflow: hidden;
 }
 
+main .box_producto .box {
+    display: flex;
+    align-items: center;
+
+}
+
+main .box_producto .box p {
+    font-size: .8rem;
+}
+
+main .box_producto .box .bi-check {
+    background-color: rgb(45, 177, 45);
+    border-radius: 50%;
+    color: #111111;
+    font-size: 1rem;
+}
+
+main .box_producto .box .bi-x {
+    background-color: rgb(177, 45, 45);
+    border-radius: 50%;
+    color: #111111;
+    font-size: 1rem;
+}
+
 main .box_producto img {
     width: 15rem;
     height: 16rem;
