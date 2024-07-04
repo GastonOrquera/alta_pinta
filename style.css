@@ -78,7 +78,10 @@ header nav ul li a {
 
 .gin,
 .fernet,
-.vinos {
+.vinos,
+.cervezas,
+.sky,
+.promos {
     padding: 2rem 2rem;
 }
 
@@ -271,7 +274,10 @@ main .box_producto p {
 
     .gin,
     .fernet,
-    .vinos {
+    .vinos,
+    .cervezas,
+    .sky,
+    .promos {
         display: flex;
         flex-direction: column;
         justify-content: center;
