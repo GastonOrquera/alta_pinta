@@ -116,9 +116,10 @@ main .box_producto {
 
 main .box_producto img {
     width: 15rem;
-    height: 15rem;
+    height: 16rem;
     object-fit: cover;
     border-radius: .4rem;
+    background-size: cover;
 
 }
 
