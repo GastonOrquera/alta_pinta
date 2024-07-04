@@ -28,7 +28,8 @@ body {
 }
 
 header {
-    background-color: var(--bg-b);
+    /* background-color: var(--bg-b); */
+    background-color: #1d1d1d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,9 +37,10 @@ header {
 }
 
 header .logo_img {
-    background-image: url(./logo-removebg-preview.png);
+    background-image: url(./img/logo-removebg-preview.png);
     background-size: cover;
     background-position: 2%;
+    object-fit: contain;
     height: 8rem;
     width: 9rem;
 }
@@ -178,6 +180,25 @@ main .box_producto p {
 
     header nav {
         display: none;
+    }
+
+    header nav.active {
+        display: block;
+        flex-direction: column;
+        /* background-color: #190a05ee; */
+        background-color: #1d1d1dec;
+        position: absolute;
+        padding: 2rem 1.2rem;
+        width: 100%;
+        top: 128px;
+        z-index: 1;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: .660rem;
     }
 
     .hamburger {
